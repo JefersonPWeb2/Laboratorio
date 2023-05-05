@@ -1,0 +1,20 @@
+import java.util.*;
+public class Calculadora {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x,y;
+        System.out.println("Que operacion realizara?? ('+', '-', '*', '/')");
+        String operacion = sc.next();
+        if (operacion.equals("*")){
+            System.out.println("Ingrese 2 operandos");
+            System.out.println("operando 1: ");
+            x = sc.nextInt();
+            System.out.println("operand2 2: ");
+            y = sc.nextInt();
+            System.out.println("El producto de ambos es: "+mult(x,y));
+        }
+    }
+    public static int mult(int x, int y){
+        return x*y;
+    }
+}
